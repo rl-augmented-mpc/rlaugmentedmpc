@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain">
-  <meta name="keywords" content="STATE-NAV">
+        content="RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain">
+  <meta name="keywords" content="RL-augmented-MPC">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain</title>
+  <title>RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -89,7 +89,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain</h1>
+          <h1 class="title is-1 publication-title">RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain</h1>
             <h2 class="subtitle is-4">Under Review</h2>
           <div class="is-size-5 publication-authors">
             <!-- <span class="author-block">
@@ -134,8 +134,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/1ha5WK8yJkeBDvAH7SGQ7QDU5a8iWObyk/view?usp=sharing"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-play"></i>
                   </span>
@@ -150,25 +149,21 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<!-- main video -->
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teasernosub.mp4"
-                type="video/mp4">
+        <source src="./static/videos/teasernosub.mp4" type="video/mp4">
       </video>
-      <div style="height: 50px;"></div> <!-- Spacer div -->
-      <!-- <video id="teaser" autoplay muted loop playsinline 
-       style="display: block; margin: 0 auto; width: 80%; max-width: 800px; height: auto; margin-bottom: 50px;">
-      <source src="./static/videos/new_video_demo.mp4" type="video/mp4">
-      </video> -->
+      <div style="height: 50px;"></div>
       <img src="./static/images/teaser.png" alt="GaussianFormer3D" style="width: auto; height: auto;">
       <h2 class="subtitle is-5">
         <p>We propose the first learning-based humanoid traversability estimation framework for generalized rough terrain navigation by incorporating bipedal locomotion stability. Traversability is defined as the fastest command velocity that keeps instability below a user-defined limit, and utilized by hierarchical TravRRT*-MPC planning framework.
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- <section class="hero is-light is-small">
@@ -236,13 +231,12 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          Bipedal robots have advantages in maneuvering human-centered environments, but face greater failure risk compared to other stable mobile plarforms such as wheeled or quadrupedal robots.
-          While learning-based traversability has been widely studied for these platforms, bipedal traversability has mainly relied on manually designed rules with limited consideration of locomotion stability on rough terrain.
-          In this work, we present the first learning-based traversability estimation and risk-sensitive navigation framework for bipedal robots operating in diverse, uneven environments.
-          TravFormer, a transformer-based neural network, is trained to predict bipedal instability with uncertainty, enabling risk-aware and adaptive planning.
-          Based on the network, we define traversability as stability-aware command velocity—the fastest command velocity that keeps instability below a user-defined limit.
-          This velocity-based traversability is integrated into a hierarchical planner that combines traversability-informed Rapid Random Tree Star (TravRRT*) for time-efficient planning and Model Predictive Control (MPC) for safe execution.
-          We validate our method in MuJoCo simulation, demonstrating improved navigation performance, with enhanced robustness and time efficiency across varying terrains compared to existing methods.
+          Model predictive control (MPC) has demonstrated effectiveness for humanoid bipedal locomotion; however, its applicability in challenging environments, such as rough and slippery terrain, is hindered by the difficulty of modeling terrain interactions. 
+          In contrast, reinforcement learning (RL) has achieved great success in training robust locomotion policies over diverse terrain, yet it lacks a guarantee of constraint satisfaction and requires substantial reward shaping. 
+          Recent efforts in combining MPC and RL have shown promise of taking the best of both worlds, but they are primarily restricted to flat terrain or quadrupedal robots. 
+          In this work, we introduce an RL-augmented MPC framework tailored for bipedal locomotion over rough and slippery terrain. Our method parametrizes three key components of single-rigid-body-dynamics-based MPC: system dynamics,  swing leg controller, and gait frequency.
+          We validate our approach through bipedal robot simulations in NVIDIA IsaacLab across various terrains, including stairs, stepping stones, and low-friction surfaces.
+          Experimental results demonstrate that our RL-MPC framework yields significantly more adaptive and robust behaviors compared to baseline MPC.
         </div>
       </div>
     </div>
@@ -288,7 +282,7 @@
 </section> -->
 
 <!-- Results section -->
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -304,9 +298,9 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -322,9 +316,9 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -340,7 +334,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Results section -->
 <!-- <section class="section">
@@ -408,8 +402,8 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{yoon2025state,
-  author    = {Yoon, Ziwon and Zhu, Lawrence and Lu, Gan and Zhao, Ye},
-  title     = {STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain},
+  author    = {Kamohara, Junnosuke and Wu, Feiyang and Hutchinson, Seth and Zhao, Ye},
+  title     = {RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain},
   year      = {2025},
   note      = {Preprint available soon on arXiv.}
 }</code></pre>
