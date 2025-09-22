@@ -92,24 +92,9 @@
           <h1 class="title is-1 publication-title">RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain</h1>
             <h2 class="subtitle is-4">Under Review</h2>
           <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block">
-              <a href="https://yzwfromk.github.io/">Ziwon Yoon</a><sup>1</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://lawrencez22.github.io/">Lawrence Y. Zhu</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://ganlumomo.github.io/">Lu Gan</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-               <a href="https://lab-idar.gatech.edu/principal-nvestigator/">Ye Zhao</a><sup>1✉</sup>
-            </span> -->
           </div>
 
           <div class="is-size-5 publication-authors">
-<!--             <span class="author-block"><sup>✉</sup>Corresponding Author</span> -->
-            <!-- <span class="author-block"><sup>†</sup>Corresponding Author</span> -->
-<!--             <span class="author-block"><sup>1</sup>Georgia Institute of Technology</span> -->
           </div>
 
           <div class="column has-text-centered">
@@ -149,266 +134,228 @@
   </div>
 </section>
 
-<!-- main video -->
-<!-- <section class="hero teaser">
+<!-- Covery picture -->
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teasernosub.mp4" type="video/mp4">
-      </video>
-      <div style="height: 50px;"></div>
-      <img src="./static/images/teaser.png" alt="GaussianFormer3D" style="width: auto; height: auto;">
-      <h2 class="subtitle is-5">
-        <p>We propose the first learning-based humanoid traversability estimation framework for generalized rough terrain navigation by incorporating bipedal locomotion stability. Traversability is defined as the fastest command velocity that keeps instability below a user-defined limit, and utilized by hierarchical TravRRT*-MPC planning framework.
+      <img src="./static/images/fig2.png" alt="System architecture" style="width: auto; height: auto;">
+      <h2 class="subtitle is-5 has-text-justified">
+        <p>
+          We propose an RL-augmented MPC controller tailored for bipedal locomotion over rough and slippery terrain.
+          Our method parametrizes three key components of single-rigid-body-dynamics-based MPC: the system dynamics, the swing-leg controller, and the gait frequency.
+          These parameters are learned by a model-free reinforcement learning policy to enhance the robustness and versatility of the MPC controller.
+        </p>
       </h2>
     </div>
   </div>
-</section> -->
+</section>
 
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
+<!-- Abstract. -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          Model predictive control (MPC) has demonstrated effectiveness for humanoid bipedal locomotion; however, its applicability in challenging environments, such as rough and slippery terrain, is hindered by the difficulty of modeling terrain interactions. 
-          In contrast, reinforcement learning (RL) has achieved great success in training robust locomotion policies over diverse terrain, yet it lacks a guarantee of constraint satisfaction and requires substantial reward shaping. 
-          Recent efforts in combining MPC and RL have shown promise of taking the best of both worlds, but they are primarily restricted to flat terrain or quadrupedal robots. 
-          In this work, we introduce an RL-augmented MPC framework tailored for bipedal locomotion over rough and slippery terrain. Our method parametrizes three key components of single-rigid-body-dynamics-based MPC: system dynamics,  swing leg controller, and gait frequency.
-          We validate our approach through bipedal robot simulations in NVIDIA IsaacLab across various terrains, including stairs, stepping stones, and low-friction surfaces.
-          Experimental results demonstrate that our RL-MPC framework yields significantly more adaptive and robust behaviors compared to baseline MPC.
+          Model predictive control (MPC) has demonstrated effectiveness for humanoid bipedal locomotion; however, its applicability in challenging environments, such as rough and slippery terrain, is limited by the difficulty of modeling terrain interactions. 
+          In contrast, reinforcement learning (RL) has achieved notable success in training robust locomotion policies over diverse terrain, yet it lacks guarantees of constraint satisfaction and often requires substantial reward shaping. 
+          Recent efforts in combining MPC and RL have shown promise of taking the best of both worlds, but they are primarily restricted to flat terrain or quadrupedal robots.
+          In this work, we propose an RL-augmented MPC framework tailored for bipedal locomotion over rough and slippery terrain. 
+          Our method parametrizes three key components of single- rigid-body-dynamics-based MPC: system dynamics, swing leg controller, and gait frequency. 
+          We validate our approach through bipedal robot simulations in NVIDIA IsaacLab across various terrains, including stairs, stepping stones, and low- friction surfaces. 
+          Experimental results demonstrate that our RL-augmented MPC framework produces significantly more adaptive and robust behaviors compared to baseline MPC and RL. 
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
-<!-- Method section -->
-<!-- <section class="section">
+
+
+<!-- Result-A: per-terrain evaluation -->
+
+<!-- Slippery surface -->
+<section class="section">
   <div class="container is-max-desktop">
+    <h1 class="title is-2 has-text-centered">Per-terrain Evaluation</h1>
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Method</h2>
-        <div class="content has-text-justified">
-          <p>
-            We propose a novel multi-modal Gaussian-based semantic occupancy prediction framework. 
-            By integrating LiDAR and camera data, our method significantly outperforms camera-only baselines with similar memory usage.
-          </p>
-          <p>
-            We design a voxel-to-Gaussian initialization module to provide 3D Gaussians with geometry priors from LiDAR data. 
-            We also develop an enhanced 3D deformable attention mechanism to update Gaussians by aggregating LiDAR-camera fusion features in a lifted 3D space. 
-          </p>
-          <p>
-            We present extensive evaluations on two on-road datasets, nuScenes-SurroundOcc and nuScenes-Occ3D, and one off-road dataset, RELLIS3D-WildOcc. 
-            Results show that our method performs on par with state-of-the-art dense grid-based methods while having reduced memory consumption and improved efficiency.
-        </div>
-      </div>
-    </div>
-    <img src="./static/images/gaussianformer3d_method.jpg" alt="GaussianFormer3D Method" style="width: 100%; height: auto;">
-  </div>
-</section> -->
 
-<!-- Results section -->
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Rough Terrain</h2>
-        <div class="content has-text-justified">
-
-          <video id="teaser" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/site.mp4"
-                    type="video/mp4">
-          </video>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Ramp</h2>
-        <div class="content has-text-justified">
-
-          <video id="teaser" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/urban.mp4"
-                    type="video/mp4">
-          </video>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Undulating Terrain</h2>
-        <div class="content has-text-justified">
-
-          <video id="teaser" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/hills.mp4"
-                    type="video/mp4">
-          </video>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- Results section -->
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Quantitative Results</h2>
-        <div class="content has-text-justified">
-
-          <div class="image-container" style="position: relative; display: inline-block; width: 100%; margin-bottom: 30px;">
-            <p class="centered-text">3D semantic occupancy prediction performance on the on-road <b>nuScenes-SurroundOcc</b> validation set.</p>
-            <img src="./static/images/surroundocc.png" alt="nuScenes-SurroundOcc" style="width: 100%; height: auto;">
+        <!-- Slippery surface  -->
+        <h2 class="title is-3">Slippery surface</h2>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/slippery_mpc.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+            </figure>
+      
           </div>
-
-
-          <div class="columns is-centered">
-            <div class="column is-half has-text-centered">
-              <p>3D semantic occupancy prediction performance on the off-road <b>RELLIS3D-WildOcc</b> validation and test sets.</p>
-              <img src="./static/images/wildocc.png" alt="RELLIS3D-WildOcc" style="width: 110%; height: auto;">
-            </div>
-
-            <div class="column is-half has-text-centered">
-              <p>Efficiency evaluation and comparison on the <b>nuScenes-SurroundOcc</b> validation set during inference.</p>
-              <img src="./static/images/efficiency_new.png" alt="efficiency" style="width: 100%; height: auto;">
-            </div>
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/slippery_rl.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+            </figure>
           </div>
+        </div>
 
+        <!-- Pyramid stairs  -->
+        <h2 class="title is-3">Pyramid stairs</h2>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/pyramid_stair_mpc.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+            </figure>
+
+          </div>
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/pyramid_stair_rl.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Random stairs  -->
+        <h2 class="title is-3">Random stairs</h2>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/random_stair_mpc.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+            </figure>
+          </div>
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/random_stair_rl.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Random blocks  -->
+        <h2 class="title is-3">Stepping-stones</h2>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/random_block_mpc.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+            </figure>
+          </div>
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/random_block_rl.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Result-B: ablation studies -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h1 class="title is-2 has-text-centered">Ablation studies</h1>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Stepping-stones</h2>
+
+        <!-- First row -->
+        <div class="columns">
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/pyramid_stair_mpc.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+            </figure>
+          </div>
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/vanilla_RL_pyramid_stair.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">Baseline RL</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Second row -->
+        <div class="columns">
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/pyramid_stair_rl.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+            </figure>
+          </div>
+          <div class="column is-half">
+            <figure class="has-text-centered">
+              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                <source src="./static/videos/pyramid_stairs_gpu-rl-mpc.mp4" type="video/mp4">
+              </video>
+              <figcaption class="has-text-weight-semibold">RL-augmented MPC w/ batch MPC</figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Result-C: Batched MPC -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h1 class="title is-2 has-text-centered">Batched MPC</h1>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="subtitle is-5 has-text-justified">
+          <p>
+            We also present preliminary results of a batched MPC controller.
+            CPU based optimizer often struggles with slow RL policy training because of the difficulty of parallelizing the optimization.
+            To this end, we implemented a generic sparse quadratic programming solver in CUDA, enabling massive parallelization and optimization acceleration by 80 times.
+          </p>
+        </h2>
+        <div class="content has-text-justified">
+          <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+            <source src="./static/videos/parallel_rl_mpc.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 
+<!-- Bibtex -->
 
-
-
-<!-- Results section -->
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Qualitative Results</h2>
-        <div class="content has-text-justified">
-          <p>
-            Visualization on the on-road <b>nuScenes</b> validation set.
-          </p>
-          <img src="./static/images/occ3d_vis.jpg" alt="nuScenes-Occ3D-vis" style="width: 100%; height: auto; margin-bottom: 30px;">
-          <p>
-            Visualization comparison with GaussianFormer.
-          </p>
-          <img src="./static/images/gaussian_comparison_wo_bbox.jpg" alt="nuScenes-gaussian-comparison" style="width: 100%; height: auto; margin-bottom: 30px;">
-          <p>
-            Visualization on the off-road <b>RELLIS3D</b> dataset.
-          </p>
-          <img src="./static/images/wildocc_vis.jpg" alt="RELLIS3D-WildOcc-vis" style="width: 100%; height: auto; margin-bottom: 30px;">
-          </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{yoon2025state,
-  author    = {Kamohara, Junnosuke and Wu, Feiyang and Hutchinson, Seth and Zhao, Ye},
-  title     = {RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain},
-  year      = {2025},
-  note      = {Preprint available soon on arXiv.}
-}</code></pre>
-  </div>
-</section> -->
 
 
 <!-- cite nerfies project page https://github.com/nerfies/nerfies.github.io -->
