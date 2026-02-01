@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain">
+    content="RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain">
   <meta name="keywords" content="RL-augmented-MPC">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain</title>
@@ -22,17 +23,15 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/lidar_logo.png">
   <!-- <link rel="icon" href="./static/images/.png"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -41,25 +40,26 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <!-- <a class="navbar-item" href="https://keunhong.com">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <!-- <a class="navbar-item" href="https://keunhong.com">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
       </a> -->
 
-      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <!-- <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
         </a>
@@ -78,302 +78,336 @@
           </a>
         </div>
       </div> -->
+      </div>
+
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain</h1>
-            <h2 class="subtitle is-4">Under review</h2>
-          <div class="is-size-5 publication-authors">
-          </div>
-
-          <div class="is-size-5 publication-authors">
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-            <!-- Arxiv Link. -->
-              <span class="link-block">
-                <a href="https://drive.google.com/file/d/1AtbCNc6N9bS6fmOeHgCi1pTDRPaHHpOG/view?usp=sharing" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>Paper</span>
-                </a>
-            </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/rl-augmented-mpc/IsaacLab4.5/tree/devel/scripts/biped" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
+            <h1 class="title is-1 publication-title">RL-augmented Adaptive Model Predictive Control for Bipedal
+              Locomotion over Challenging Terrain</h1>
+            <h2 class="subtitle is-4">ICRA 2026</h2>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://jnskkmhr.github.io/">Junnosuke Kamohara</a><sup>1</sup>,
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://drive.google.com/file/d/1sJHHiF8Aw1AhLMmOwThNqgRxM5qYKXVa/view?usp=sharing" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-play"></i>
-                  </span>
-                  <span>Video</span>
-                  </a>
+              <span class="author-block">
+                <a href="https://www.feiyangwu.com/">Feiyang Wu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="">Chinmayee Wamorkar</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://coe.northeastern.edu/people/hutchinson-seth/">Seth Hutchinson</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://lab-idar.gatech.edu/principal-nvestigator/">Ye Zhao</a><sup>1</sup>
+              </span>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Georgia Institute of Technology,</span>
+              <span class="author-block"><sup>2</sup>North Eastern University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2509.18466" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/rl-augmented-mpc/IsaacLab4.5/tree/devel/scripts/biped"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://youtu.be/7Pe_6futIfM?si=IR26Z_NhvW-hEJoa"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-play"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Covery picture -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/fig2.png" alt="System architecture" style="width: auto; height: auto;">
-      <h2 class="subtitle is-5 has-text-justified">
-        <p>
-          We propose an RL-augmented MPC controller tailored for bipedal locomotion over rough and slippery terrain.
-          Our method parametrizes three key components of single-rigid-body-dynamics-based MPC: the system dynamics, the swing-leg controller, and the gait frequency.
-          These parameters are learned by a model-free reinforcement learning policy to enhance the robustness and versatility of the MPC controller.
-        </p>
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<!-- Abstract. -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          Model predictive control (MPC) has demonstrated effectiveness for humanoid bipedal locomotion; however, its applicability in challenging environments, such as rough and slippery terrain, is limited by the difficulty of modeling terrain interactions. 
-          In contrast, reinforcement learning (RL) has achieved notable success in training robust locomotion policies over diverse terrain, yet it lacks guarantees of constraint satisfaction and often requires substantial reward shaping. 
-          Recent efforts in combining MPC and RL have shown promise of taking the best of both worlds, but they are primarily restricted to flat terrain or quadrupedal robots.
-          In this work, we propose an RL-augmented MPC framework tailored for bipedal locomotion over rough and slippery terrain. 
-          Our method parametrizes three key components of single- rigid-body-dynamics-based MPC: system dynamics, swing leg controller, and gait frequency. 
-          We validate our approach through bipedal robot simulations in NVIDIA IsaacLab across various terrains, including stairs, stepping stones, and low- friction surfaces. 
-          Experimental results demonstrate that our RL-augmented MPC framework produces significantly more adaptive and robust behaviors compared to baseline MPC and RL. 
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Result-A: per-terrain evaluation -->
-
-<!-- Slippery surface -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h1 class="title is-2 has-text-centered">Per-terrain evaluation</h1>
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-
-        <!-- Slippery surface  -->
-        <h2 class="title is-3">Slippery surface</h2>
-        <div class="columns is-multiline">
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/slippery_mpc.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
-            </figure>
-      
-          </div>
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/slippery_rl.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <!-- Pyramid stairs  -->
-        <h2 class="title is-3">Pyramid stairs</h2>
-        <div class="columns is-multiline">
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/pyramid_stair_mpc.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
-            </figure>
-
-          </div>
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/pyramid_stair_rl.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <!-- Random stairs  -->
-        <h2 class="title is-3">Random stairs</h2>
-        <div class="columns is-multiline">
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/random_stair_mpc.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
-            </figure>
-          </div>
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/random_stair_rl.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <!-- Random blocks  -->
-        <h2 class="title is-3">Stepping-stones</h2>
-        <div class="columns is-multiline">
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/random_block_mpc.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
-            </figure>
-          </div>
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/random_block_rl.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
-            </figure>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Result-B: ablation studies -->
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h1 class="title is-2 has-text-centered">Ablation studies</h1>
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <!-- <h2 class="title is-3">Stepping-stones</h2> -->
-
-        <!-- First row -->
-        <div class="columns">
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/pyramid_stair_mpc.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
-            </figure>
-          </div>
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/vanilla_RL_pyramid_stair.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">Baseline RL</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <!-- Second row -->
-        <div class="columns">
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/pyramid_stair_rl.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
-            </figure>
-          </div>
-          <div class="column is-half">
-            <figure class="has-text-centered">
-              <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-                <source src="./static/videos/pyramid_stairs_gpu-rl-mpc.mp4" type="video/mp4">
-              </video>
-              <figcaption class="has-text-weight-semibold">RL-augmented MPC w/ batch MPC</figcaption>
-            </figure>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Result-C: Batched MPC -->
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h1 class="title is-2 has-text-centered">Batched MPC</h1>
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+  <!-- Covery picture -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/fig2.png" alt="System architecture" style="width: auto; height: auto;">
         <h2 class="subtitle is-5 has-text-justified">
           <p>
-            We also present preliminary results of a batched MPC controller.
-            CPU based optimizer often struggles with slow RL policy training because of the difficulty of parallelizing the optimization.
-            To this end, we implemented a generic sparse quadratic programming solver in CUDA, enabling massive parallelization and optimization acceleration by 80 times.
+            We propose an RL-augmented MPC controller tailored for bipedal locomotion over rough and slippery terrain.
+            Our method parametrizes three key components of single-rigid-body-dynamics-based MPC: the system dynamics,
+            the swing-leg controller, and the gait frequency.
+            These parameters are learned by a model-free reinforcement learning policy to enhance the robustness and
+            versatility of the MPC controller.
           </p>
         </h2>
-        <div class="content has-text-justified">
-          <video autoplay muted loop playsinline style="width: 100%; height: auto;">
-            <source src="./static/videos/parallel_rl_mpc.mp4" type="video/mp4">
-          </video>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Abstract. -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            Model predictive control (MPC) has demonstrated effectiveness for humanoid bipedal locomotion; however, its
+            applicability in challenging environments, such as rough and slippery terrain, is limited by the difficulty
+            of modeling terrain interactions.
+            In contrast, reinforcement learning (RL) has achieved notable success in training robust locomotion policies
+            over diverse terrain, yet it lacks guarantees of constraint satisfaction and often requires substantial
+            reward shaping.
+            Recent efforts in combining MPC and RL have shown promise of taking the best of both worlds, but they are
+            primarily restricted to flat terrain or quadrupedal robots.
+            In this work, we propose an RL-augmented MPC framework tailored for bipedal locomotion over rough and
+            slippery terrain.
+            Our method parametrizes three key components of single- rigid-body-dynamics-based MPC: system dynamics,
+            swing leg controller, and gait frequency.
+            We validate our approach through bipedal robot simulations in NVIDIA IsaacLab across various terrains,
+            including stairs, stepping stones, and low- friction surfaces.
+            Experimental results demonstrate that our RL-augmented MPC framework produces significantly more adaptive
+            and robust behaviors compared to baseline MPC and RL.
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<!-- Bibtex -->
+  </section>
 
 
 
-<!-- cite nerfies project page https://github.com/nerfies/nerfies.github.io -->
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page is modified based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-          </p>
+  <!-- Result-A: per-terrain evaluation -->
+
+  <!-- Slippery surface -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h1 class="title is-2 has-text-centered">Per-terrain evaluation</h1>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+
+          <!-- Slippery surface  -->
+          <h2 class="title is-3">Slippery surface</h2>
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/slippery_mpc.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+              </figure>
+
+            </div>
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/slippery_rl.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Pyramid stairs  -->
+          <h2 class="title is-3">Pyramid stairs</h2>
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/pyramid_stair_mpc.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+              </figure>
+
+            </div>
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/pyramid_stair_rl.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Random stairs  -->
+          <h2 class="title is-3">Random stairs</h2>
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/random_stair_mpc.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+              </figure>
+            </div>
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/random_stair_rl.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Random blocks  -->
+          <h2 class="title is-3">Stepping-stones</h2>
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/random_block_mpc.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+              </figure>
+            </div>
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/random_block_rl.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+              </figure>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+
+  <!-- Result-B: ablation studies -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h1 class="title is-2 has-text-centered">Ablation studies</h1>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <!-- <h2 class="title is-3">Stepping-stones</h2> -->
+
+          <!-- First row -->
+          <div class="columns">
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/pyramid_stair_mpc.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">Baseline MPC</figcaption>
+              </figure>
+            </div>
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/vanilla_RL_pyramid_stair.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">Baseline RL</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Second row -->
+          <div class="columns">
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/pyramid_stair_rl.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">RL-augmented MPC</figcaption>
+              </figure>
+            </div>
+            <div class="column is-half">
+              <figure class="has-text-centered">
+                <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+                  <source src="./static/videos/pyramid_stairs_gpu-rl-mpc.mp4" type="video/mp4">
+                </video>
+                <figcaption class="has-text-weight-semibold">RL-augmented MPC w/ batch MPC</figcaption>
+              </figure>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Result-C: Batched MPC -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h1 class="title is-2 has-text-centered">Batched MPC</h1>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="subtitle is-5 has-text-justified">
+            <p>
+              We also present preliminary results of a batched MPC controller.
+              CPU based optimizer often struggles with slow RL policy training because of the difficulty of
+              parallelizing the optimization.
+              To this end, we implemented a generic sparse quadratic programming solver in CUDA, enabling massive
+              parallelization and optimization acceleration by 80 times.
+            </p>
+          </h2>
+          <div class="content has-text-justified">
+            <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+              <source src="./static/videos/parallel_rl_mpc.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Bibtex -->
+
+
+
+  <!-- cite nerfies project page https://github.com/nerfies/nerfies.github.io -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page is modified based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
